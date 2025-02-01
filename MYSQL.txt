@@ -1,0 +1,78 @@
+My Sql is Data base.
+
+CRUD Full Form Is.
+
+C: Crate Data:
+R : Read Data:
+U : Update data:
+D : Delete data:
+
+MySql Store data in form of table.
+
+My Sql Data base:
+
+Create database Class;
+use student;
+create table student(
+s-id INT
+s-name VARCHAR (255)
+s-age INT
+s-email VARCHAR (255)
+select *form student;
+);
+
+
+Query :
+
+create database,
+use t_d,
+create table t_d,
+Select,
+insert,
+values,
+
+
+constrants:
+
+constrants should not be null.
+constrants should be unique.
+constrants should be check.
+
+
+
+
+Key: 
+
+primary (Unique). We can use one time in table.
+unique we can use mult time.
+
+we use auto- increment on Id.
+
+
+Sql commands are mainly categarized into categories.
+
+
+
+ddl _ data definition lang
+dql _ data qurey lang
+
+
+
+
+
+CREATE table product(
+id int PRIMARY key AUTO_INCREMENT,
+    name varchar (255) not null ,
+    dis varchar (255) not null ,
+    price int not null,
+    Quty int not null ,
+    category varchar (255) not null UNIQUE,
+    image varchar (255) not null,
+    p_date timestamp DEFAULT CURRENT_TIMESTAMP,
+    ad_fk_id int,
+    FOREIGN key (ad_fk_id) REFERENCES admin(id)
+    
+);
+
+
+
